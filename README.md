@@ -19,6 +19,12 @@ steps need to be taken:
      a terminal and running `xdg-open -nv`.
   2. Copy the `xdg-gmail.desktop` file to `~/.local/share/applications/`.
   3. Copy the icon `gmail.png` to `~/.local/share/icons`.
+  4. (optional) To make mailto: links open with this script, add the following
+     line to `~/.local/share/applications/mimeapps.list`
+
+     `x-scheme-handler/mailto=xdg-gmail.desktop`
+
+     If there's a previous entry for `x-scheme-handler`, remove it.
 
 After these steps, the application should show up in the list of applications
 (you can use the search field to find it). Drag it onto the bar to make it
