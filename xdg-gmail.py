@@ -5,6 +5,7 @@
 
 import argparse
 import os
+import urllib
 
 DEFAULT_COMMANDS = ['google-chrome', 'chromium-browser']
 
@@ -48,7 +49,7 @@ if not args.mailto:
     cmd.append('--app=https://mail.google.com/mail')
 else:
     cmd.append('--app=https://mail.google.com/mail?extsrc=mailto&url=%s'
-                    % args.mailto)
+                    % urllib.quote(args.mailto, safe=""))
 
 if args.verbose:
     print ' '.join(cmd)
