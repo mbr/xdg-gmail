@@ -5,7 +5,6 @@
 
 import argparse
 import os
-import sys
 
 DEFAULT_COMMANDS = ['google-chrome', 'chromium-browser']
 
