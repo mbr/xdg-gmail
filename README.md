@@ -10,6 +10,20 @@ with three key differences:
 To use, simply open up *System* -> *Preferences* -> *Preferred Applications*
 and use this script as your email program.
 
+Installing on GNOME 3 without root permissions
+==============================================
+To install this to the little bar on the left side of the screen, some more
+steps need to be taken:
+
+  1. Copy the script to somewhere in your path. You can verify this by opening
+     a terminal and running `xdg-open -nv`.
+  2. Copy the `xdg-gmail.desktop` file to `~/.local/share/applications/`.
+  3. Copy the icon `gmail.png` to `~/.local/share/icons`.
+
+After these steps, the application should show up in the list of applications
+(you can use the search field to find it). Drag it onto the bar to make it
+stick there.
+
 License
 =======
 Copyright (c) 2011 Marc Brinkmann
