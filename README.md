@@ -16,7 +16,7 @@ To install this to the little bar on the left side of the screen, some more
 steps need to be taken:
 
   1. Copy the script to somewhere in your path. You can verify this by opening
-     a terminal and running `xdg-open -nv`.
+     a terminal and running `xdg-gmail.py -nv`.
   2. Copy the `xdg-gmail.desktop` file to `~/.local/share/applications/`.
   3. Copy the icon `gmail.png` to `~/.local/share/icons`.
   4. (optional) To make mailto: links open with this script, add the following
