@@ -24,7 +24,7 @@ steps need to be taken:
 
      `x-scheme-handler/mailto=xdg-gmail.desktop`
 
-     If there's a previous entry for `x-scheme-handler`, remove it.
+     If there's a previous entry for `x-scheme-handler/mailto`, remove it.
 
 After these steps, the application should show up in the list of applications
 (you can use the search field to find it). Drag it onto the bar to make it
