@@ -49,7 +49,7 @@ parser.add_argument('mailto', nargs='?', help=(
     'opened or nothing, to open the inbox.'), default=None)
 parser.add_argument('--cmd', default=None, help=(
     'Which command to use for opening chrome/chromium. If not set, '
-    '%r are tried in order.' % (DEFAULT_COMMANDS)
+    '{!r} are tried in order.'.format(DEFAULT_COMMANDS)
 ))
 parser.add_argument('-v', '--verbose', default=False, action='store_true',
                     help='Show command before running it.')
