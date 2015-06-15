@@ -1,9 +1,10 @@
-Launch GMail using chromium as the browser desktop wide.
+Chrome/Chromium as your mail program
+====================================
 
 This tool is similiar to desktop-webmail, found in the Ubuntu repositories,
 with three key differences:
 
-  1. It will always use chromium as the browser.
+  1. It will always use Chrome/Chromium as the browser.
   2. It only supports GMail.
   3. (most important): It uses the chromium **app mode**.
 
