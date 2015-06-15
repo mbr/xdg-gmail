@@ -13,7 +13,7 @@ and use this script as your email program.
 
 
 Installing on GNOME 3 without root permissions
-==============================================
+----------------------------------------------
 To install this to the little bar on the left side of the screen, some more
 steps need to be taken:
 
