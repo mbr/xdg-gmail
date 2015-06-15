@@ -16,7 +16,12 @@ except ImportError:
 
 import sys
 
-DEFAULT_COMMANDS = ['google-chrome', 'chromium-browser']
+DEFAULT_COMMANDS = ['google-chrome',
+                    'google-chrome-stable',
+                    'google-chrome-beta',
+                    'google-chrome-unstable',
+                    'chromium-browser',
+                    ]
 
 
 # this has been stolen from
