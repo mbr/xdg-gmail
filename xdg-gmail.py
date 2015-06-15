@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 # coding=utf8
 
+from __future__ import print_function
+
 # see README file for details
 
 import argparse
+from functools import reduce
 import os
 import urllib
 import sys
@@ -49,7 +52,7 @@ cmd = [args.cmd or reduce(lambda c, n: c or which(n), DEFAULT_COMMANDS, None)]
 
 if cmd[0] is None:
     print ('Could not find command to launch.\nNone supplied on command-line '
-           'and none of {} found.').format(DEFAULT_COMMANDS)
+           'and none of {} found.'.format(DEFAULT_COMMANDS))
     sys.exit(1)
 
 
@@ -60,7 +63,7 @@ else:
                     % urllib.quote(args.mailto, safe=""))
 
 if args.verbose:
-    print ' '.join(cmd)
+    print(' '.join(cmd))
 
 if not args.dry_run:
     os.execv(cmd[0], cmd)
