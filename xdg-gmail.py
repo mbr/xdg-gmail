@@ -76,4 +76,4 @@ if args.verbose:
     print(' '.join(cmd))
 
 if not args.dry_run:
-    os.execv(cmd[0], cmd)
+    os.execvp(cmd[0], cmd)
