@@ -6,6 +6,7 @@
 import argparse
 import os
 import urllib
+import sys
 
 DEFAULT_COMMANDS = ['google-chrome', 'chromium-browser']
 
@@ -44,6 +45,13 @@ parser.add_argument('-n', '--dry-run', default=False, action='store_true',
 args = parser.parse_args()
 
 cmd = [args.cmd or reduce(lambda c, n: c or which(n), DEFAULT_COMMANDS, None)]
+
+
+if cmd[0] is None:
+    print ('Could not find command to launch.\nNone supplied on command-line '
+           'and none of {} found.').format(DEFAULT_COMMANDS)
+    sys.exit(1)
+
 
 if not args.mailto:
     cmd.append('--app=https://mail.google.com/mail')
