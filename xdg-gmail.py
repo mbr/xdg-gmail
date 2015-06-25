@@ -21,6 +21,7 @@ DEFAULT_COMMANDS = ['google-chrome',
                     'google-chrome-beta',
                     'google-chrome-unstable',
                     'chromium-browser',
+                    'chromium',
                     ]
 
 
